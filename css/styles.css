@@ -166,6 +166,7 @@ a {
     display: flex;
     justify-content: space-between;
     position: relative;
+    transition: 0.5s;
   }
 
   .navbar img {
@@ -206,6 +207,7 @@ a {
   }
 
   .burger-menu {
+    cursor: pointer;
     color: var(--almost-black);
     position: absolute;
     top: 28px;
