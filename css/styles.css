@@ -55,7 +55,6 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-/* Desktop Layout */
 .navbar {
   justify-content: space-between;
   margin: 20px 60px 80px;
@@ -70,11 +69,21 @@ body {
   list-style: none;
 }
 
+#nav-links li a img {
+  width: 20px;
+}
+
+.active {
+  transform: rotate(180deg);
+}
+
 a {
   color: var(--medium-gray);
   font-size: 16px;
   text-decoration: none;
 }
+
+/* Desktop Layout */
 @media only screen and (min-width: 376px) {
   .burger-menu {
     display: none;
@@ -166,7 +175,6 @@ a {
     display: flex;
     justify-content: space-between;
     position: relative;
-    transition: 0.5s;
   }
 
   .navbar img {
@@ -189,6 +197,10 @@ a {
 
   #nav-links li {
     margin: 20px 0;
+  }
+
+  #nav-links li a img {
+    margin: 0;
   }
 
   #user-links {
